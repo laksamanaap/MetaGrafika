@@ -85,11 +85,13 @@ const AboutBahari = () => {
           </svg>
         </span>
       </div>
+      {/* Preparing for spline.js*/}
       <div className="flex justify-end items-center">
         <div>
           <img src={ocean} alt="" />
         </div>
       </div>
+      {/* Preparing for spline.js*/}
     </section>
   );
 };

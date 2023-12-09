@@ -4,11 +4,13 @@ import school from "../assets/images/school-3d.png";
 const About = () => {
   return (
     <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left">
-      <div className="row-start-2 lg:row-start-auto flex justify-start items-center">
+      {/* Preparing for spline.js*/}
+      <div className="row-start-2 lg:row-start-auto flex justify-center items-center">
         <div>
           <img className="" src={school} alt="" />
         </div>
       </div>
+      {/* Preparing for spline.js*/}
       <div className="py-32 relative flex flex-col items-end">
         <div>
           <span className="flex px-5 w-max border border-accent py-3 rounded-xl gap-3 items-center bg-white">
