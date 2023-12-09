@@ -1,31 +1,28 @@
 import React from "react";
-import ocean from "../assets/images/ocean-mini-3d.png";
 import school from "../assets/images/school-3d.png";
 
-function About() {
-  return (
-    <>
-      <AboutWisataBahari />
-      <AboutMetaGrafika />
-    </>
-  );
-}
-
-function AboutMetaGrafika() {
+const About = () => {
   return (
     <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left">
       <div className="row-start-2 lg:row-start-auto flex justify-start items-center">
         <div>
-          <img className="w-" src={school} alt="" />
+          <img className="" src={school} alt="" />
         </div>
       </div>
       <div className="py-32 relative flex flex-col items-end">
         <div>
           <span className="flex px-5 w-max border border-accent py-3 rounded-xl gap-3 items-center bg-white">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              aria-label="metagrafika"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
+                fillRule="evenodd"
+                clipRule="evenodd"
                 d="M8.25 6.75C8.25 5.75544 8.64509 4.80161 9.34835 4.09835C10.0516 3.39509 11.0054 3 12 3C12.9946 3 13.9484 3.39509 14.6517 4.09835C15.3549 4.80161 15.75 5.75544 15.75 6.75C15.75 7.74456 15.3549 8.69839 14.6517 9.40165C13.9484 10.1049 12.9946 10.5 12 10.5C11.0054 10.5 10.0516 10.1049 9.34835 9.40165C8.64509 8.69839 8.25 7.74456 8.25 6.75ZM15.75 9.75C15.75 8.95435 16.0661 8.19129 16.6287 7.62868C17.1913 7.06607 17.9544 6.75 18.75 6.75C19.5456 6.75 20.3087 7.06607 20.8713 7.62868C21.4339 8.19129 21.75 8.95435 21.75 9.75C21.75 10.5456 21.4339 11.3087 20.8713 11.8713C20.3087 12.4339 19.5456 12.75 18.75 12.75C17.9544 12.75 17.1913 12.4339 16.6287 11.8713C16.0661 11.3087 15.75 10.5456 15.75 9.75ZM2.25 9.75C2.25 8.95435 2.56607 8.19129 3.12868 7.62868C3.69129 7.06607 4.45435 6.75 5.25 6.75C6.04565 6.75 6.80871 7.06607 7.37132 7.62868C7.93393 8.19129 8.25 8.95435 8.25 9.75C8.25 10.5456 7.93393 11.3087 7.37132 11.8713C6.80871 12.4339 6.04565 12.75 5.25 12.75C4.45435 12.75 3.69129 12.4339 3.12868 11.8713C2.56607 11.3087 2.25 10.5456 2.25 9.75ZM6.31 15.117C6.91995 14.161 7.76108 13.3743 8.75562 12.8294C9.75016 12.2846 10.866 11.9994 12 12C12.9498 11.9991 13.8891 12.1989 14.7564 12.5862C15.6237 12.9734 16.3994 13.5395 17.0327 14.2474C17.6661 14.9552 18.1428 15.7888 18.4317 16.6936C18.7205 17.5985 18.815 18.5541 18.709 19.498C18.696 19.6153 18.6556 19.7278 18.591 19.8265C18.5263 19.9252 18.4393 20.0073 18.337 20.066C16.4086 21.1725 14.2233 21.7532 12 21.75C9.695 21.75 7.53 21.138 5.663 20.066C5.56069 20.0073 5.47368 19.9252 5.40904 19.8265C5.34441 19.7278 5.30396 19.6153 5.291 19.498C5.12305 17.9646 5.48246 16.4198 6.31 15.118V15.117Z"
                 fill="#047392"
               />
@@ -38,83 +35,33 @@ function AboutMetaGrafika() {
           </span>
         </div>
         <p className="text-3xl text-right leading-10 mt-12 text-slate-600 mb-5">
-          Tenggelam dalam kreativitas, siswa{" "}
+          Tenggelam dalam kreativitas, siswa&nbsp;
           <span className="whitespace-nowrap font-semibold italic relative">
             SMKN 4 Malang
-            <svg className="absolute w-full -bottom-2 right-0 left-0" width="264" height="9" viewBox="0 0 264 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              aria-label="metagrafika"
+              className="absolute w-full -bottom-2 right-0 left-0"
+              width="264"
+              height="9"
+              viewBox="0 0 264 9"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path
                 d="M263.238 5.25522C261.959 7.86355 257.95 7.86143 254.619 7.94369C239.509 8.30956 224.395 8.7856 209.23 8.7083C188.163 8.60692 167.047 8.24456 145.963 7.62412C127.416 7.08124 109.063 7.03053 90.7459 7.99589C82.182 8.44695 73.3672 8.00676 64.6385 6.78085C46.0578 4.17398 27.6454 4.15425 9.56597 6.72192C5.31208 7.32349 1.38505 6.30938 0.97994 4.44201C0.808384 3.63075 2.3414 2.15648 3.62666 2.05244C11.4329 1.40946 19.3508 0.935856 27.3086 0.667709C39.3865 0.262146 51.4738 0.932444 63.3296 2.51024C74.846 4.04308 86.1688 3.71042 97.568 3.20946C117.552 2.32987 137.665 3.14255 157.799 3.69672C180.776 4.3281 203.746 4.47939 226.712 4.72433C237.279 4.8396 247.832 4.66209 258.402 4.6782C259.942 4.68235 261.529 5.0356 263.25 5.25014L263.238 5.25522Z"
                 fill="#047392"
               />
             </svg>
           </span>
-          , membentuk tim Metaverse. Bersama, kita menjelajahi peluang menarik di dunia digital!
+          , membentuk tim Metaverse. Bersama, kita menjelajahi peluang menarik
+          di dunia digital!
         </p>
-        <p className="text-secondary">Terdiri dari 10 siswa dengan kolaborasi jurusan animasi dan RPL. </p>
+        <p className="text-secondary">
+          Terdiri dari 10 siswa dengan kolaborasi jurusan animasi dan RPL.&nbsp;
+        </p>
       </div>
     </section>
   );
-}
-
-function AboutWisataBahari() {
-  return (
-    <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left">
-      <div className="py-32 relative">
-        <span className="absolute right-7 top-44">
-          <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.08 0.479997L7.12 14.88L5.8 9.48C7.52 9.48 8.92 9.98 10 10.98C11.08 11.98 11.62 13.36 11.62 15.12C11.62 16.84 11.06 18.24 9.94 19.32C8.86 20.36 7.5 20.88 5.86 20.88C4.18 20.88 2.78 20.36 1.66 19.32C0.58 18.24 0.0400001 16.84 0.0400001 15.12C0.0400001 14.6 0.0800001 14.1 0.16 13.62C0.24 13.1 0.4 12.5 0.64 11.82C0.88 11.14 1.22 10.24 1.66 9.12L5.14 0.479997H11.08ZM25.24 0.479997L21.28 14.88L19.96 9.48C21.68 9.48 23.08 9.98 24.16 10.98C25.24 11.98 25.78 13.36 25.78 15.12C25.78 16.84 25.22 18.24 24.1 19.32C23.02 20.36 21.66 20.88 20.02 20.88C18.34 20.88 16.94 20.36 15.82 19.32C14.74 18.24 14.2 16.84 14.2 15.12C14.2 14.6 14.24 14.1 14.32 13.62C14.4 13.1 14.56 12.5 14.8 11.82C15.04 11.14 15.38 10.24 15.82 9.12L19.3 0.479997H25.24Z"
-              fill="#0583D2"
-            />
-          </svg>
-        </span>
-        <div className="flex">
-          <span className="flex px-5 w-max border border-accent py-3 rounded-xl gap-3 items-center bg-white">
-            <svg width="34" height="26" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M16.9999 3.08539C20.8469 3.08539 24.3044 4.41331 26.6329 6.8019C28.5489 7.05107 30.3564 7.83348 31.8493 9.05997C29.237 3.57015 23.8259 0.5 16.9999 0.5C10.2671 0.5 4.81869 3.56601 2.17529 9.03926C3.54409 7.92205 5.17692 7.17519 6.91725 6.87026C9.20226 4.37809 12.8027 3.08539 16.9999 3.08539Z"
-                fill="#0365A2"
-              />
-              <path
-                d="M25.2868 25.4998C23.1312 25.5023 21.06 24.6622 19.5152 23.1588L19.5111 23.1547C19.3325 23.0206 19.141 22.9047 18.9393 22.8087C18.3322 22.5269 17.6696 22.3846 17.0003 22.3923C16.1426 22.3923 15.4901 22.6057 15.0633 22.8087C14.8609 22.9045 14.6687 23.0204 14.4895 23.1547L14.4853 23.1588C13.5113 24.1045 12.3198 24.7963 11.0157 25.1735C9.71162 25.5507 8.33482 25.6017 7.00637 25.3221C5.67793 25.0424 4.43854 24.4407 3.39717 23.5698C2.3558 22.6989 1.54435 21.5854 1.03417 20.3274C0.523996 19.0693 0.330717 17.7052 0.471331 16.355C0.611944 15.0047 1.08214 13.7097 1.84058 12.5838C2.59902 11.4578 3.62248 10.5355 4.82095 9.8978C6.01942 9.26013 7.3562 8.92668 8.71376 8.92676H25.2868C27.4845 8.92676 29.5922 9.7998 31.1462 11.3538C32.7003 12.9078 33.5733 15.0156 33.5733 17.2133C33.5733 19.411 32.7003 21.5187 31.1462 23.0727C29.5922 24.6267 27.4845 25.4998 25.2868 25.4998Z"
-                fill="#0583D2"
-                fill-opacity="0.64"
-              />
-            </svg>
-            <h6 className="font-semibold text-primary">Metaverse Wisata Bahari</h6>
-          </span>
-        </div>
-        <p className="text-3xl leading-10 mt-12 text-slate-600">
-          Karya{" "}
-          <span className="font-semibold text-secondary italic relative">
-            dunia digital wisata bahari
-            <svg className="absolute left-0 -bottom-2 w-full right-0" width="448" height="11" viewBox="0 0 448 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M447.98 0.413406C445.952 3.06477 439.104 3.20258 433.421 3.40102C407.637 4.29399 381.853 5.29722 355.948 5.74922C319.963 6.38312 283.877 6.75793 247.832 6.87369C216.124 6.97842 184.777 7.56823 153.551 9.17228C138.952 9.92194 123.871 9.78965 108.891 8.86912C77.002 6.91229 45.555 7.53515 14.8309 10.7322C7.60171 11.4819 0.834391 10.6054 0.0311479 8.75335C-0.31023 7.94857 2.22003 6.42169 4.40887 6.27286C17.7025 5.35784 31.197 4.60819 44.7718 4.06249C65.375 3.23566 86.0585 3.48371 106.401 4.64678C126.16 5.77678 145.478 5.04915 164.917 4.15067C198.995 2.57418 233.394 2.68443 267.812 2.5356C307.091 2.36472 346.329 1.71429 385.568 1.15755C403.621 0.903994 421.634 0.358289 439.686 0.00550909C442.317 -0.0441006 445.048 0.253564 448 0.407905L447.98 0.413406Z"
-                fill="#047392"
-              />
-            </svg>
-          </span>{" "}
-          yang dibuat oleh tim metagrafika. Kamu bisa mendapatkan pengalaman berkunjung tanpa datang ke tempat
-        </p>
-        <span className="absolute right-0">
-          <svg width="127" height="67" viewBox="0 0 127 67" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M1.79242 65.1243C3.65985 53.924 5.78928 40.9219 13.4015 32.026C22.0169 21.9577 35.9441 17.7693 48.6373 21.5511C57.0747 24.065 61.8423 32.269 61.8228 40.8453C61.8133 44.9715 59.1823 55.6495 53.6816 55.4603C46.1094 55.1998 43.6949 47.9414 43.8216 41.3807C44.1481 24.48 55.3129 9.14254 71.3728 4.14774C86.9087 -0.684103 101.173 2.434 116.802 3.70086C120.472 3.99834 123.573 4.19149 125.728 1.11702"
-              stroke="#0583D2"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-        </span>
-      </div>
-      <div className="flex justify-end items-center">
-        <div>
-          <img src={ocean} alt="" />
-        </div>
-      </div>
-    </section>
-  );
-}
+};
 
 export default About;
