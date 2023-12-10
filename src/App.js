@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/layout/Navbar";
@@ -7,10 +6,10 @@ import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App sans">
       <Router>
         <Navbar />
-        <main className="container mx-auto">
+        <main>
           <Routes>
             <Route path="/" element={<Home />} />
           </Routes>
