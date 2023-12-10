@@ -1,15 +1,28 @@
-import React from "react";
-import school from "../img/schoolModel.png";
+import React, { Suspense, useRef } from "react";
+import school from "../assets/images/school-3d.png";
+const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 const About = () => {
+  const objectToAnimate = useRef();
+
+  function onLoad(spline) {
+    const obj = spline.findObjectByName("Cube");
+    // save the object in a ref for later use
+    objectToAnimate.current = obj;
+  }
+
+  function triggerAnimation() {
+    objectToAnimate.current.emitEvent("mouseHover");
+  }
+
   return (
     <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left">
       {/* Preparing for spline.js*/}
-      <div className="row-start-2 lg:row-start-auto flex justify-center items-center">
-        <div>
-          <img className="" src={school} alt="" />
-        </div>
-      </div>
+      {/* For Loading */}
+      <Suspense fallback={<div>Loading...</div>}>
+        {/* Spline Scene */}
+        <Spline scene="https://prod.spline.design/jzAXUzgTvf6akeSK/scene.splinecode" />
+      </Suspense>
       {/* Preparing for spline.js*/}
       <div className="py-32 relative flex flex-col items-end">
         <div>
