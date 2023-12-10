@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-function Accordion({ header, content }) {
+const Accordion = ({ header, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleAccordion = () => {
@@ -11,13 +11,13 @@ function Accordion({ header, content }) {
     <div className="border-b-primary hover:bg-accent transition duration-300 border-b-2 py-4">
       <div
         className={`flex items-center justify-between px-4 py-2 cursor-pointer ${
-          isOpen ? 'open' : ''
+          isOpen ? "open" : ""
         }`}
         onClick={toggleAccordion}
       >
         <p className="text-lg text-start font-semibold me-2">{header}</p>
         <svg
-          className={`w-5 h-5 transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-5 h-5 transform ${isOpen ? "rotate-180" : ""}`}
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="none"
@@ -31,13 +31,13 @@ function Accordion({ header, content }) {
       </div>
       <div
         className={`px-4 overflow-hidden transition-all duration-300 ${
-          isOpen ? 'max-h-96' : 'max-h-0'
+          isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
         <p className="text-base font-normal text-start">{content}</p>
       </div>
     </div>
   );
-}
+};
 
 export default Accordion;

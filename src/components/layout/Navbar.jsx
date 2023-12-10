@@ -2,7 +2,7 @@ import React from "react";
 import metaLogo from "../../img/meta_logo.png";
 import calendar from "../../img/calendar.png";
 
-function Navbar() {
+const Navbar = () => {
   return(
     <div id="header" className="bg-white">
       <div className="flex justify-between items-center bg-white shadow p-4">

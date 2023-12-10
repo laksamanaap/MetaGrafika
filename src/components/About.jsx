@@ -7,18 +7,19 @@ const About = () => {
   useEffect(() => {
     if (splineRef.current) {
       console.log("test spline");
-      splineRef.current.setZoom(0.2);
+      splineRef.current.setZoom(0.05);
     }
-  }, [splineRef.current]);
+  }, []);
 
   return (
     <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left">
       {/* Preparing for spline.js*/}
       {/* For Loading */}
-      <div className="sm:h-720 sm:w-460 md:h-720 md:w-460 lg:h-720 lg:w-460">
+      <div>
         <Suspense fallback={<div>Loading Scene...</div>}>
           {/* Spline Scene */}
           <Spline
+            className="sm:h-720 sm:w-460 md:h-720 md:w-460 lg:h-720 lg:w-460"
             ref={splineRef}
             scene="https://prod.spline.design/jzAXUzgTvf6akeSK/scene.splinecode"
           />

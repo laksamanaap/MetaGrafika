@@ -2,20 +2,36 @@ import React from 'react';
 import "../img/FAQbg.png";
 import Accordion from "../components/elements/Accordion";
 
-function Faq() {
+const Faq = () => { 
   return (
     <>
       <div className="bg-faq-background bg-no-repeat bg-cover bg-top py-4">
         <div className="text-center">
-          <p className="font-semibold text-black text-3xl">Frequently Asked Questions</p>
+          <p className="font-semibold text-black text-3xl">
+            Frequently Asked Questions
+          </p>
         </div>
         <div className="flex flex-row justify-center items-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="1px">
-            <line x1="0" y1="0" x2="100%" y2="0" stroke="#0583D2" strokeWidth="1" />
+            <line
+              x1="0"
+              y1="0"
+              x2="100%"
+              y2="0"
+              stroke="#0583D2"
+              strokeWidth="1"
+            />
           </svg>
           <p className="m-2 text-primary text-xl">FAQ</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="1px">
-            <line x1="0" y1="0" x2="100%" y2="0" stroke="#0583D2" strokeWidth="1" />
+            <line
+              x1="0"
+              y1="0"
+              x2="100%"
+              y2="0"
+              stroke="#0583D2"
+              strokeWidth="1"
+            />
           </svg>
         </div>
         <Accordion
@@ -40,7 +56,7 @@ function Faq() {
         />
       </div>
     </>
-  )
+  );
 }
 
 export default Faq
