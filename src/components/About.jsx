@@ -1,28 +1,29 @@
-import React, { Suspense, useRef } from "react";
+import React, { Suspense, useRef, useEffect } from "react";
 import school from "../assets/images/school-3d.png";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 const About = () => {
-  const objectToAnimate = useRef();
-
-  function onLoad(spline) {
-    const obj = spline.findObjectByName("Cube");
-    // save the object in a ref for later use
-    objectToAnimate.current = obj;
-  }
-
-  function triggerAnimation() {
-    objectToAnimate.current.emitEvent("mouseHover");
-  }
+  const splineRef = useRef();
+  useEffect(() => {
+    if (splineRef.current) {
+      console.log("test spline");
+      splineRef.current.setZoom(0.2);
+    }
+  }, [splineRef.current]);
 
   return (
     <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left">
       {/* Preparing for spline.js*/}
       {/* For Loading */}
-      <Suspense fallback={<div>Loading...</div>}>
-        {/* Spline Scene */}
-        <Spline scene="https://prod.spline.design/jzAXUzgTvf6akeSK/scene.splinecode" />
-      </Suspense>
+      <div className="sm:h-720 sm:w-460 md:h-720 md:w-460 lg:h-720 lg:w-460">
+        <Suspense fallback={<div>Loading Scene...</div>}>
+          {/* Spline Scene */}
+          <Spline
+            ref={splineRef}
+            scene="https://prod.spline.design/jzAXUzgTvf6akeSK/scene.splinecode"
+          />
+        </Suspense>
+      </div>
       {/* Preparing for spline.js*/}
       <div className="py-32 relative flex flex-col items-end">
         <div>
