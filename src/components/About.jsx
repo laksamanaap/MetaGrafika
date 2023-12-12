@@ -1,5 +1,4 @@
 import React, { Suspense, useRef, useEffect } from "react";
-import school from "../assets/images/school-3d.png";
 const Spline = React.lazy(() => import("@splinetool/react-spline"));
 
 const About = () => {

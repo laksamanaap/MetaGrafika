@@ -4,7 +4,7 @@ import heroCta from "../img/heroCta.png";
 
 const Hero = () => {
   return (
-    <div className="my-2 lg:my-10 mx-4">
+    <div className="my-2 lg:my-10 mx-4" id="hero">
       <div className="text-start my-2 hidden lg:block">
         <a href="#link" className="inline-block">
           <p className="w-fit text-primary font-semibold tracking-wide">

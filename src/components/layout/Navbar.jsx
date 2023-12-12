@@ -4,16 +4,16 @@ import calendar from "../../img/calendar.png";
 
 const Navbar = () => {
   return(
-    <div id="header" className="bg-white">
+    <div id="header" className="sticky top-0 bg-white z-10">
       <div className="flex justify-between items-center bg-white shadow p-4">
         <div className="justify-start">
-          <a href="#header">
+          <a href="#hero">
             <img src={metaLogo} alt="Meta" width="48" height="48"/>
           </a>
         </div>
         <div className="justify-center">
           <ul className="list-none flex">
-            <li className="mx-1 lg:mx-3 text-secondary hover:text-accent transition duration-300"><a href="#header">Home</a></li>
+            <li className="mx-1 lg:mx-3 text-secondary hover:text-accent transition duration-300"><a href="#hero">Home</a></li>
             <li className="mx-1 lg:mx-3 text-secondary hover:text-accent transition duration-300"><a href="#cta">Our 3D</a></li>
             <li className="mx-1 lg:mx-3 text-secondary hover:text-accent transition duration-300"><a href="#about">About</a></li>
           </ul>

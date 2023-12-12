@@ -29,7 +29,7 @@ const Cta = () => {
               <div className=" rounded-xl aspect-video bg-slate-200 mb-2"></div>
               <h2 className="font-semibold text-xl">Metaverse Wisata Bahari</h2>
               <p className="text-slate-600 mb-2">4 - 30 Desember</p>
-              <button className="flex items-center justify-center w-full border border-b-2 border-primary rounded-lg py-2 hover:bg-accent transition duration-300">
+              <button className="relative flex items-center justify-center w-full border border-b-2 border-primary rounded-lg py-2 hover:bg-accent transition duration-300">
                 <div className="flex items-center gap-4">
                   <img
                     src={loket}
