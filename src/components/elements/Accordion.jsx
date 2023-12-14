@@ -8,7 +8,7 @@ const Accordion = ({ header, content }) => {
   };
 
   return (
-    <div className="border-b-primary hover:bg-accent transition duration-300 border-b-2 py-4">
+    <div className="container border-b-primary hover:bg-accent transition duration-300 border-b-2 py-4">
       <div
         className={`flex items-center justify-between px-4 py-2 cursor-pointer ${
           isOpen ? "open" : ""

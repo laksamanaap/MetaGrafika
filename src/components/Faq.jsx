@@ -5,7 +5,7 @@ import Accordion from "../components/elements/Accordion";
 const Faq = () => { 
   return (
     <>
-      <div className="bg-faq-background bg-no-repeat bg-cover bg-top py-4">
+      <div className="bg-faq-background bg-no-repeat bg-cover bg-top p-5 md:p-10">
         <div className="text-center">
           <p className="font-semibold text-black text-3xl">
             Frequently Asked Questions

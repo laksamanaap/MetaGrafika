@@ -1,29 +1,29 @@
 import React from "react";
-import logo from "../../img/Metagrafika.png";
-import ig from "../../img/IG.png";
-import fb from "../../img/FB.png";
-import yt from "../../img/YT.png";
-import twt from "../../img/X.png";
-import arrow from "../../img/Arrow.png";
+import logo from "../../img/Metagrafika.svg";
+import ig from "../../img/IG.svg";
+import fb from "../../img/FB.svg";
+import yt from "../../img/YT.svg";
+import twt from "../../img/X.svg";
+import arrow from "../../img/Arrow.svg";
 
 const Footer = () => {
   return (
     <div>
-      <div className="flex flex-row justify-between items-center m-4">
-        <div className="justify-start">
-          <p className="hidden lg:block text-3xl text-primary font-bold">
+      <div className="container flex justify-between items-center m-5 mx-auto">
+        <div className="w-1/3">
+          <p className="hidden lg:block text-3xl text-left text-primary font-bold mr-auto">
             Explore lebih jauh
           </p>
-          <p className="hidden lg:block text-3xl text-primary font-bold">
+          <p className="hidden lg:block text-3xl text-left text-primary font-bold">
             tentang kami
           </p>
         </div>
-        <div className="justify-center">
+        <div className="w-auto">
           <div className="flex flex-col">
-            <div>
+            <div className="mx-auto">
               <img className="shrink-1" src={logo} alt="logo" />
             </div>
-            <div className="flex flex-row">
+            <div className="flex gap-2 mx-auto">
               <a
                 href="#link"
                 className="my-2 hover:bg-accent rounded-full transition duration-300"
@@ -51,8 +51,8 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="justify-end">
-          <img className="shrink-1 hidden lg:block" src={arrow} alt="arrow" />
+        <div className="w-1/3">
+          <img className="shrink-1 hidden lg:block ml-auto" src={arrow} alt="arrow" />
         </div>
       </div>
       <div className="bg-secondary p-5 flex flex-col justify-center items-center">
