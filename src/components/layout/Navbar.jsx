@@ -1,11 +1,11 @@
 import React from "react";
-import metaLogo from "../../img/meta_logo.png";
-import calendar from "../../img/calendar.png";
+import metaLogo from "../../img/meta_logo.svg";
+import calendar from "../../img/calendar.svg";
 
 const Navbar = () => {
   return(
-    <div id="header" className="sticky top-0 bg-white z-10">
-      <div className="flex justify-between items-center bg-white shadow p-4">
+    <div id="header" className="sticky top-0 bg-white shadow p-4 z-10">
+      <div className="container  flex justify-between items-center">
         <div className="justify-start">
           <a href="#hero">
             <img src={metaLogo} alt="Meta" width="48" height="48"/>
