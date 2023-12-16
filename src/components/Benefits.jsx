@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import vr from "../img/vr.png";
-import scenery from "../img/scenery.png";
-import turtle from "../img/turtle.png";
+import vr from "../img/vr.svg";
+import scenery from "../img/scenery.svg";
+import turtle from "../img/turtle.svg";
 import Tilt from "react-parallax-tilt";
-import tripleLine from "../img/3line.png";
-import curlArrow from "../img/curlyarrow.png";
+import tripleLine from "../img/3line.svg";
+import curlArrow from "../img/curlyarrow.svg";
 
 const Tab = ({ img, header, paragraph }) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -61,7 +61,7 @@ const Benefits = () => {
     },
   ];
   return (
-    <div className="flex flex-col my-2">
+    <div className="container flex flex-col my-2">
       <div>
         <h1 className="text-4xl font-semibold mt-12">
           Apa yang kamu dapatkan nanti?

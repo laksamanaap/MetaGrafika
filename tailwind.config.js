@@ -15,10 +15,11 @@ module.exports = {
         sans: ["Montserrat", "sans-serif"],
       },
       backgroundImage: {
-        'faq-background': "url('/src/img/FAQbg.png')",
-        'hero-background': "url('/src/img/tropicalIsland.png')",
+        "faq-background": "url('/src/img/FAQbg.png')",
+        "hero-background": "url('/src/img/tropicalIsland.png')",
       },
     },
+    container: { center: true },
   },
   plugins: [],
 };

@@ -1,15 +1,15 @@
 import React from "react";
-import loket from "../img/loket.png";
-import intersect from "../img/intersect.png";
+import loket from "../img/loket.svg";
+import intersect from "../img/intersect.svg";
 
 const Cta = () => { 
   return (
-    <div className="flex justify-center" id="cta">
-      <section className="container px-4 lg:px-20 text-left">
-        <div className="relative bg-secondary rounded-2xl overflow-hidden grid gap-5 grid-cols-1 md:grid-cols-2  px-7 py-5 md:px-14 md:py-10">
+    <div className="container flex justify-center my-24" id="cta">
+      <section className="px-4 lg:px-20 text-left">
+        <div className="relative bg-secondary rounded-2xl overflow-hidden grid gap-5 grid-cols-1 md:grid-cols-2  px-7 py-5 md:px-14 md:py-5">
           <img
             src={intersect}
-            alt="intersect.png"
+            alt="intersect.svg"
             className="absolute h-2/3 md:h-full -top-6 md:top-0 md:rotate-0 rotate-12 md:-left-52"
           />
           <div className="text-white flex items-center">
@@ -34,7 +34,7 @@ const Cta = () => {
                   <img
                     src={loket}
                     className="w-8 h-8 md:w-10 md:h-10"
-                    alt="loket.png"
+                    alt="loket.svg"
                   />
                   <p className="font-medium text-sm md:text-base">
                     Beli Sekarang

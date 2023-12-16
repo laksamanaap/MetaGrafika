@@ -1,5 +1,5 @@
 import React from "react";
-import ocean from "../img/beachModel.png";
+import ocean from "../img/beachModel.svg";
 
 const AboutBahari = () => {
   return (
