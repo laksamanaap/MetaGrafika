@@ -1,6 +1,7 @@
 import React from "react";
 import heroImage from "../img/tropicalIsland.svg";
 import heroCta from "../img/heroCta.svg";
+import RoundedButton from "./elements/RoundedButton";
 
 const Hero = () => {
   return (
@@ -13,24 +14,12 @@ const Hero = () => {
         </a>
       </div>
       <div className="flex flex-col my-2 mt-4">
-        {/* <div className="absolute top-0 left-0 w-full h-full bg-hero-background opacity-50 bg-cover bg-no-repeat bg-bottom lg:hidden"></div>
-
-        It was supposed to add background to the text in hero section for mobile devices, but it looks better without it I think.
-        - Adi
-
-        */}
         <div className="md:flex md:flex-row md:justify-between md:items-center mb-5">
           <p className="md:justify-start text-black text-3xl lg:text-6xl text-center lg:text-start font-bold tracking-widest space-y-2 w-full md:w-2/3">
             PESONA LAUT WISATA BAHARI DALAM 3D!
           </p>
           <div className="justify-center hidden md:flex">
-            <a href="#link">
-              <img
-                src={heroCta}
-                alt="Hero CTA"
-                className="justify-end shrink-0 w-24 lg:w-40 hover:scale-110 active:border-4 active:rounded-full transition duration-300"
-              />
-            </a>
+            <RoundedButton roundedText={"EKSPLOR SEKARANG JUGA"} />
           </div>
         </div>
         <hr className="border border-secondary my-5"></hr>
