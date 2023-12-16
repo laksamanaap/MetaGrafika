@@ -52,25 +52,17 @@
     transition: transform var(--hoverDuration) var(--easeOut);
 }
 
-/* .link__arrow {
-    stroke-width: 0.075em;
-} */
-
 .link__text {
     animation: rotateReverse normal infinite var(--rotationDuration) linear;
     transform-origin: 50% 50%;
     letter-spacing: 12px;
     background-color: #E8D6C1;
-        /* Set your desired background color */
-        padding: 10px;
-        /* Adjust the padding as needed */
+    padding: 10px;
 }
 
 .link__text-background {
     fill: #E8D6C1;
-    /* Set your desired background color */
     padding: 10px;
-    /* Adjust the padding as needed */
 }
 
 .link:hover .link__text {
