@@ -29,7 +29,7 @@ const Isometric = ({ splineUrl }) => {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
