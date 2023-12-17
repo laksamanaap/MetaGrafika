@@ -1,6 +1,7 @@
 import React from "react";
 import heroImage from "../img/tropicalIsland.svg";
 import heroCta from "../img/heroCta.svg";
+import RoundedButton from "./elements/RoundedButton";
 
 const Hero = () => {
   return (
