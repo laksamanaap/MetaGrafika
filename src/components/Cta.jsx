@@ -2,26 +2,19 @@ import React from "react";
 import loket from "../img/loket.svg";
 import intersect from "../img/intersect.svg";
 
-const Cta = () => { 
+const Cta = () => {
   return (
     <div className="container flex justify-center my-24" id="cta">
       <section className="px-4 lg:px-20 text-left">
         <div className="relative bg-secondary rounded-2xl overflow-hidden grid gap-5 grid-cols-1 md:grid-cols-2  px-7 py-5 md:px-14 md:py-5">
-          <img
-            src={intersect}
-            alt="intersect.svg"
-            className="absolute h-2/3 md:h-full -top-6 md:top-0 md:rotate-0 rotate-12 md:-left-52"
-          />
+          <img src={intersect} alt="intersect.svg" className="absolute h-2/3 md:h-full -top-6 md:top-0 md:rotate-0 rotate-12 md:-left-52" />
           <div className="text-white flex items-center">
             <div>
               <h1 className="font-semibold text-3xl md:text-5xl mb-2 md:mb-7">
                 Tiket Menuju
                 <br /> 3D Wisata Bahari
               </h1>
-              <p className="text-slate-100">
-                Dapatkan pengalaman menarik menjelajah wisata bahari dengan
-                harga Rp. 20.000 secara digital melalui metaverse!
-              </p>
+              <p className="text-slate-100">Dapatkan pengalaman menarik menjelajah wisata bahari dengan harga Rp. 20.000 secara digital melalui metaverse!</p>
             </div>
           </div>
           <div className="flex items-center justify-center md:justify-end">
@@ -31,14 +24,8 @@ const Cta = () => {
               <p className="text-slate-600 mb-2">4 - 30 Desember</p>
               <button className="relative flex items-center justify-center w-full border border-b-2 border-primary rounded-lg py-2 hover:bg-accent transition duration-300">
                 <div className="flex items-center gap-4">
-                  <img
-                    src={loket}
-                    className="w-8 h-8 md:w-10 md:h-10"
-                    alt="loket.svg"
-                  />
-                  <p className="font-medium text-sm md:text-base">
-                    Beli Sekarang
-                  </p>
+                  <img src={loket} className="w-8 h-8 md:w-10 md:h-10" alt="loket.svg" />
+                  <p className="font-medium text-sm md:text-base">Beli Sekarang</p>
                 </div>
               </button>
             </div>
@@ -47,6 +34,6 @@ const Cta = () => {
       </section>
     </div>
   );
-}
+};
 
 export default Cta;
