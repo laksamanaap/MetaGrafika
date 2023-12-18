@@ -1,14 +1,16 @@
-import React, { Suspense, useRef, useEffect, Fragment } from "react";
+import React, { Fragment } from "react";
 import Isometric from "./elements/Isometric";
 
 const About = () => {
   return (
     <Fragment>
-      <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left">
-        <Isometric splineUrl="https://prod.spline.design/jzAXUzgTvf6akeSK/scene.splinecode" />
-        <div className="py-32 relative flex flex-col items-end">
+      <section className="container grid grid-cols-1 items-center justify-between px-4 text-left lg:grid-cols-2 lg:px-20">
+        <div>
+          <Isometric splineUrl="https://prod.spline.design/Hbv1kS4ofpwsFggy/scene.splinecode" />
+        </div>
+        <div className="relative flex flex-col items-end py-32">
           <div>
-            <span className="flex px-5 w-max border border-accent py-3 rounded-xl gap-3 items-center bg-white">
+            <span className="flex w-max items-center gap-3 rounded-xl border border-accent bg-white px-5 py-3">
               <svg
                 aria-label="metagrafika"
                 width="24"
@@ -31,13 +33,13 @@ const About = () => {
               <h6 className="font-semibold text-primary">Meta Grafika</h6>
             </span>
           </div>
-          <p className="text-3xl text-right leading-10 mt-12 text-slate-600 mb-5">
+          <p className="mb-5 mt-12 text-right text-3xl leading-10 text-slate-600">
             Tenggelam dalam kreativitas, siswa&nbsp;
-            <span className="whitespace-nowrap font-semibold italic relative">
+            <span className="relative whitespace-nowrap font-semibold italic">
               SMKN 4 Malang
               <svg
                 aria-label="metagrafika"
-                className="absolute w-full -bottom-2 right-0 left-0"
+                className="absolute -bottom-2 left-0 right-0 w-full"
                 width="264"
                 height="9"
                 viewBox="0 0 264 9"
@@ -50,13 +52,9 @@ const About = () => {
                 />
               </svg>
             </span>
-            , membentuk tim Metaverse. Bersama, kita menjelajahi peluang menarik
-            di dunia digital!
+            , membentuk tim Metaverse. Bersama, kita menjelajahi peluang menarik di dunia digital!
           </p>
-          <p className="text-secondary">
-            Terdiri dari 10 siswa dengan kolaborasi jurusan animasi dan
-            RPL.&nbsp;
-          </p>
+          <p className="text-secondary">Terdiri dari 10 siswa dengan kolaborasi jurusan animasi dan RPL.&nbsp;</p>
         </div>
       </section>
     </Fragment>

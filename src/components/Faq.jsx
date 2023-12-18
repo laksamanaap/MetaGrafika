@@ -1,37 +1,23 @@
-import React from 'react';
+import React from "react";
 import "../img/FAQbg.png";
 import Accordion from "../components/elements/Accordion";
+import bgFaq from "../img/FAQbg.svg";
 
-const Faq = () => { 
+const Faq = () => {
   return (
-    <>
-      <div className="bg-faq-background bg-no-repeat bg-cover bg-top p-5 md:p-10">
+    <section className="relative my-24 w-full py-10">
+      <img src={bgFaq} className="absolute left-0 right-0 top-0 w-full" alt="" />
+      <div className="container relative z-0 mt-20 px-4 lg:px-20">
         <div className="text-center">
-          <p className="font-semibold text-black text-3xl">
-            Frequently Asked Questions
-          </p>
+          <p className="text-3xl font-medium text-black">Frequently Asked Questions</p>
         </div>
-        <div className="flex flex-row justify-center items-center">
+        <div className="mb-5 flex flex-row items-center justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="1px">
-            <line
-              x1="0"
-              y1="0"
-              x2="100%"
-              y2="0"
-              stroke="#0583D2"
-              strokeWidth="1"
-            />
+            <line x1="0" y1="0" x2="100%" y2="0" stroke="#0583D2" strokeWidth="1" />
           </svg>
-          <p className="m-2 text-primary text-xl">FAQ</p>
+          <p className="m-2 text-xl text-primary">FAQ</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="2.5em" height="1px">
-            <line
-              x1="0"
-              y1="0"
-              x2="100%"
-              y2="0"
-              stroke="#0583D2"
-              strokeWidth="1"
-            />
+            <line x1="0" y1="0" x2="100%" y2="0" stroke="#0583D2" strokeWidth="1" />
           </svg>
         </div>
         <Accordion
@@ -55,8 +41,8 @@ const Faq = () => {
           content="Ya, Anda dapat mengakses layanan ini tanpa VR. Kami juga menyediakan versi non-VR yang dapat diakses melalui komputer atau perangkat seluler Anda. Namun, untuk pengalaman terbaik, kami merekomendasikan menggunakan perangkat VR."
         />
       </div>
-    </>
+    </section>
   );
-}
+};
 
-export default Faq
+export default Faq;

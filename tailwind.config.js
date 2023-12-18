@@ -8,8 +8,8 @@ module.exports = {
         secondary: "#047392",
         tertiary: "#C1F1FF",
         accent: "#83E4FF",
-        white: "#F9F9F9",
-        black: "#001917",
+        "white-theme": "#F9F9F9",
+        "black-theme": "#001917",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],
