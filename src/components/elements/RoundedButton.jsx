@@ -33,14 +33,7 @@ const RoundedButton = ({ roundedText }) => {
           <textPath href="#link-circle" stroke="none">
             {roundedText}
           </textPath>
-          <rect
-            x="0"
-            y="80"
-            width="200"
-            height="40"
-            className="link__text-background"
-            rx="40"
-          />
+          <rect x="0" y="80" width="200" height="40" className="link__text-background" rx="40" />
         </text>
       </svg>
     </a>

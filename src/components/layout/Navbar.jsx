@@ -1,36 +1,71 @@
-import React from "react";
+import React, { useState } from "react";
 import metaLogo from "../../img/meta_logo.svg";
 import calendar from "../../img/calendar.svg";
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div id="header" className="sticky top-0 bg-white shadow py-4 z-10">
-      <div className="container lg:px-20 flex justify-between items-center">
-        <div className="justify-start">
-          <a href="#hero">
-            <img src={metaLogo} alt="Meta" width="48" height="48" />
-          </a>
+    <div id="header" className="sticky top-0 z-10 bg-white-theme py-4">
+      <div className="container px-4 lg:px-20">
+        <div className="flex items-center justify-between">
+          <div className="justify-start">
+            <a href="#hero">
+              <img src={metaLogo} alt="Meta" width="48" height="48" />
+            </a>
+          </div>
+          <div className="hidden justify-center font-semibold">
+            <ul className="flex list-none">
+              <li className="mx-1 text-secondary transition duration-300 hover:text-accent lg:mx-3">
+                <a href="#hero">Home</a>
+              </li>
+              <li className="mx-1 text-secondary transition duration-300 hover:text-accent lg:mx-3">
+                <a href="#cta">Our 3D</a>
+              </li>
+              <li className="mx-1 text-secondary transition duration-300 hover:text-accent lg:mx-3">
+                <a href="#about">About</a>
+              </li>
+            </ul>
+          </div>
+          <div className="justify-end">
+            <a href="#link">
+              <div className="flex flex-row gap-4 rounded-lg border-[1.5px] border-b-[3px] border-secondary px-4 py-2 font-semibold transition duration-300 hover:bg-accent/10 active:border-b">
+                <img src={calendar} alt="Calendar" width="24" height="24" />
+                <p className="ps-1 text-primary">Event</p>
+              </div>
+            </a>
+          </div>
+          <div>
+            <button onClick={() => setIsOpen(!isOpen)}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="h-6 w-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
-        <div className="justify-center font-semibold">
-          <ul className="list-none flex">
-            <li className="mx-1 lg:mx-3 text-secondary hover:text-accent transition duration-300">
-              <a href="#hero">Home</a>
+        <div className={`${isOpen ? "block" : "hidden"}`}>
+          <ul className="my-2 flex flex-col items-start gap-5">
+            <li>
+              <a href="#home">Home</a>
             </li>
-            <li className="mx-1 lg:mx-3 text-secondary hover:text-accent transition duration-300">
-              <a href="#cta">Our 3D</a>
+            <li>
+              <a href="#our">Our 3D</a>
             </li>
-            <li className="mx-1 lg:mx-3 text-secondary hover:text-accent transition duration-300">
+            <li>
               <a href="#about">About</a>
             </li>
           </ul>
-        </div>
-        <div className="justify-end">
-          <a href="#link">
-            <div className="flex border-b-2 gap-4 font-semibold flex-row rounded-lg border border-secondary hover:bg-accent/10 active:border-b transition duration-300 py-2 px-4">
-              <img src={calendar} alt="Calendar" width="24" height="24" />
-              <p className="ps-1 text-primary">Event</p>
-            </div>
-          </a>
         </div>
       </div>
     </div>
