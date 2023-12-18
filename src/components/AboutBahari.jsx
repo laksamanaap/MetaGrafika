@@ -1,10 +1,14 @@
 import React from "react";
 import ocean from "../img/beachModel.svg";
+import Isometric from "./elements/Isometric";
 
 const AboutBahari = () => {
   return (
-    <section className="container grid grid-cols-1 lg:grid-cols-2 px-4 justify-between lg:px-20 text-left" id="about">
-      <div className="py-32 relative">
+    <section
+      className="container grid grid-cols-1 items-center justify-between px-4 text-left lg:grid-cols-2 lg:px-20"
+      id="about"
+    >
+      <div className="relative py-32">
         <span className="absolute right-7 top-44">
           <svg
             aria-label="metagrafika"
@@ -21,7 +25,7 @@ const AboutBahari = () => {
           </svg>
         </span>
         <div className="flex">
-          <span className="flex px-5 w-max border border-accent py-3 rounded-xl gap-3 items-center bg-white">
+          <span className="flex w-max items-center gap-3 rounded-xl border border-accent bg-white px-5 py-3">
             <svg
               aria-label="metagrafika"
               width="34"
@@ -40,18 +44,16 @@ const AboutBahari = () => {
                 fillOpacity="0.64"
               />
             </svg>
-            <h6 className="font-semibold text-primary">
-              Metaverse Wisata Bahari
-            </h6>
+            <h6 className="font-semibold text-primary">Metaverse Wisata Bahari</h6>
           </span>
         </div>
-        <p className="text-3xl leading-10 mt-12 text-slate-600">
+        <p className="mt-12 text-3xl leading-10 text-slate-600">
           Karya &nbsp;
-          <span className="font-semibold text-secondary italic relative">
+          <span className="relative font-semibold italic text-secondary">
             dunia digital wisata bahari
             <svg
               aria-label="metagrafika"
-              className="absolute left-0 -bottom-2 w-full right-0"
+              className="absolute -bottom-2 left-0 right-0 w-full"
               width="448"
               height="11"
               viewBox="0 0 448 11"
@@ -64,8 +66,7 @@ const AboutBahari = () => {
               />
             </svg>
           </span>
-          &nbsp; yang dibuat oleh tim metagrafika. Kamu bisa mendapatkan
-          pengalaman berkunjung tanpa datang ke tempat
+          &nbsp; yang dibuat oleh tim metagrafika. Kamu bisa mendapatkan pengalaman berkunjung tanpa datang ke tempat
         </p>
         <span className="absolute right-0">
           <svg
@@ -85,13 +86,11 @@ const AboutBahari = () => {
           </svg>
         </span>
       </div>
-      {/* Preparing for spline.js*/}
-      <div className="flex justify-end items-center">
+      <div className="flex items-center justify-end">
         <div>
-          <img src={ocean} alt="" />
+          <Isometric splineUrl="https://prod.spline.design/HwkDRPPoXqsSW9FW/scene.splinecode" />
         </div>
       </div>
-      {/* Preparing for spline.js*/}
     </section>
   );
 };
