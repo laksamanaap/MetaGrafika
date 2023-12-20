@@ -14,7 +14,7 @@ const Navbar = () => {
               <img src={metaLogo} alt="Meta" width="48" height="48" />
             </a>
           </div>
-          <div className="hidden justify-center font-semibold">
+          <div className="hidden justify-center font-semibold sm:flex">
             <ul className="flex list-none">
               <li className="mx-1 text-secondary transition duration-300 hover:text-accent lg:mx-3">
                 <a href="#hero">Home</a>
@@ -35,7 +35,7 @@ const Navbar = () => {
               </div>
             </a>
           </div>
-          <div>
+          <div className="sm:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
