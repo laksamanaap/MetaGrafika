@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div id="header" className="sticky top-0 z-10 bg-white-theme py-4">
       <div className="container px-4 lg:px-20">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-5">
           <div className="justify-start">
             <a href="#hero">
               <img src={metaLogo} alt="Meta" width="48" height="48" />
@@ -27,13 +27,15 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="justify-end">
-            <a href="#link">
-              <div className="flex flex-row gap-4 rounded-lg border-[1.5px] border-b-[3px] border-secondary px-4 py-2 font-semibold transition duration-300 hover:bg-accent/10 active:border-b">
-                <img src={calendar} alt="Calendar" width="24" height="24" />
-                <p className="ps-1 text-primary">Event</p>
-              </div>
-            </a>
+          <div className="grow sm:grow-0">
+            <button className="ml-auto block">
+              <a href="#link">
+                <div className="flex flex-row gap-4 rounded-lg border-[1.5px] border-b-[3px] border-secondary px-4 py-2 font-semibold transition duration-300 hover:bg-accent/10 active:border-b">
+                  <img src={calendar} alt="Calendar" width="24" height="24" />
+                  <p className="ps-1 text-primary">Event</p>
+                </div>
+              </a>
+            </button>
           </div>
           <div className="sm:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
