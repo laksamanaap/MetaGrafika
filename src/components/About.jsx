@@ -5,10 +5,10 @@ const About = () => {
   return (
     <Fragment>
       <section className="container grid grid-cols-1 items-center justify-between px-4 text-left lg:grid-cols-2 lg:px-20">
-        <div>
+        <div className="row-start-2 lg:col-start-1 lg:row-start-1">
           <Isometric splineUrl="https://prod.spline.design/Hbv1kS4ofpwsFggy/scene.splinecode" />
         </div>
-        <div className="relative flex flex-col items-end py-32">
+        <div className="relative row-start-1 flex flex-col items-end py-32 lg:col-start-2">
           <div>
             <span className="flex w-max items-center gap-3 rounded-xl border border-accent bg-white px-5 py-3">
               <svg
