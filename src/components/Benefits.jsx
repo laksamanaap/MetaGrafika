@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import vr from "../img/vr.svg";
 import scenery from "../img/scenery.svg";
 import turtle from "../img/turtle.svg";
@@ -6,32 +6,44 @@ import Tilt from "react-parallax-tilt";
 import tripleLine from "../img/3line.svg";
 import curlArrow from "../img/curlyarrow.svg";
 
+// const Tab = ({ img, header, paragraph }) => {
+//   const [isHovered, setIsHovered] = useState(false);
+//   const handleMouseEnter = () => {
+//     setIsHovered(true);
+//   };
+//   const handleMouseLeave = () => {
+//     setIsHovered(false);
+//   };
+//   return (
+//     <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+//       {isHovered ? (
+//         <Tilt>
+//           <div className="m-2 rounded-2xl bg-white p-5 shadow-sm">
+//             <img src={img} alt="vr" />
+//             <h1 className="py-3 text-start text-xl font-semibold text-secondary">{header}</h1>
+//             <p className="text-start">{paragraph}</p>
+//           </div>
+//         </Tilt>
+//       ) : (
+//         <div className="m-2 rounded-2xl bg-white p-5">
+//           <img src={img} alt="vr" />
+//           <h1 className="py-3 text-start text-xl font-semibold text-secondary">{header}</h1>
+//           <p className="text-start">{paragraph}</p>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
 const Tab = ({ img, header, paragraph }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
   return (
-    <div onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-      {isHovered ? (
-        <Tilt>
-          <div className="m-2 rounded-2xl bg-white p-5 shadow-sm">
-            <img src={img} alt="vr" />
-            <h1 className="py-3 text-start text-xl font-semibold text-secondary">{header}</h1>
-            <p className="text-start">{paragraph}</p>
-          </div>
-        </Tilt>
-      ) : (
-        <div className="m-2 rounded-2xl bg-white p-5">
-          <img src={img} alt="vr" />
-          <h1 className="py-3 text-start text-xl font-semibold text-secondary">{header}</h1>
-          <p className="text-start">{paragraph}</p>
-        </div>
-      )}
-    </div>
+    <Tilt>
+      <div className="m-2 rounded-2xl bg-white p-5 shadow-sm">
+        <img src={img} alt="vr" />
+        <h1 className="py-3 text-start text-xl font-semibold text-secondary">{header}</h1>
+        <p className="text-start">{paragraph}</p>
+      </div>
+    </Tilt>
   );
 };
 

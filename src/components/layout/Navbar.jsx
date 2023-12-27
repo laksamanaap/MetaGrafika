@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div id="header" className="sticky top-0 z-10 bg-white-theme py-4">
+    <div id="header" className="sticky top-0 z-10 bg-white-theme shadow-lg py-4">
       <div className="container px-4 lg:px-20">
         <div className="flex items-center justify-between gap-5">
           <div className="justify-start">
@@ -29,8 +29,8 @@ const Navbar = () => {
           </div>
           <div className="grow sm:grow-0">
             <button className="ml-auto block">
-              <a href="#link">
-                <div className="flex flex-row gap-4 rounded-lg border-[1.5px] border-b-[3px] border-secondary px-4 py-2 font-semibold transition duration-300 hover:bg-accent/10 active:border-b">
+              <a href="#cta">
+                <div className="flex flex-row gap-4 rounded-lg border-[1.5px] border-b-[3px] border-secondary px-4 py-2 font-semibold transition duration-300 hover:bg-primary/50 active:border-b">
                   <img src={calendar} alt="Calendar" width="24" height="24" />
                   <p className="ps-1 text-primary">Event</p>
                 </div>
@@ -59,10 +59,10 @@ const Navbar = () => {
         <div className={`${isOpen ? "block" : "hidden"}`}>
           <ul className="my-2 flex flex-col items-start gap-5">
             <li>
-              <a href="#home">Home</a>
+              <a href="#hero">Home</a>
             </li>
             <li>
-              <a href="#our">Our 3D</a>
+              <a href="#cta">Our 3D</a>
             </li>
             <li>
               <a href="#about">About</a>

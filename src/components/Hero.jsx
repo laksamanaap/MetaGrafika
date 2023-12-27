@@ -1,13 +1,12 @@
 import React from "react";
 import heroImage from "../img/tropicalIsland.svg";
-import heroCta from "../img/heroCta.svg";
 import RoundedButton from "./elements/RoundedButton";
 
 const Hero = () => {
   return (
     <div className="container mx-auto my-2 px-4 lg:my-10 lg:px-20" id="hero">
       <div className="hidden text-start lg:block">
-        <a href="#link" className="inline-block">
+        <a href="https://youtu.be/dQw4w9WgXcQ?si=XHfujjZX3eaDmPjA" className="inline-block">
           <p className="font-medium tracking-wide text-primary">#GRAFIKA4META</p>
         </a>
       </div>
@@ -17,7 +16,7 @@ const Hero = () => {
             PESONA LAUT WISATA BAHARI DALAM 3D!
           </p>
           <div className="hidden justify-center md:flex">
-            <a href="#link">
+            <a href="#cta">
               <RoundedButton roundedText={"Explore Sekarang Juga"} />
             </a>
           </div>
@@ -33,7 +32,7 @@ const Hero = () => {
           </p>
         </div>
         <div className="my-2 block text-start lg:hidden">
-          <a href="#link" className="block">
+          <a href="https://youtu.be/dQw4w9WgXcQ?si=XHfujjZX3eaDmPjA" className="block">
             <p className="text-center font-semibold tracking-wide text-primary">#GRAFIKA4META</p>
           </a>
         </div>

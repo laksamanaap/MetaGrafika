@@ -2,7 +2,7 @@ import React from "react";
 
 const RoundedButton = ({ roundedText }) => {
   return (
-    <a href="https://www.loket.com/" className="link">
+    <a href="#cta" className="link">
       <svg
         viewBox="0 0 200 200"
         width="200"
