@@ -31,7 +31,7 @@ const Cta = () => {
               <h2 className="text-xl font-semibold">Metaverse Wisata Bahari</h2>
               <p className="mb-2 text-slate-600">4 - 30 Desember</p>
               <button className="relative flex w-full items-center justify-center rounded-lg border border-b-2 border-primary py-2 transition duration-300 hover:bg-accent">
-                <a href="https://youtu.be/dQw4w9WgXcQ?si=XHfujjZX3eaDmPjA" target="_blank" rel="noopener noreferrer">
+                <a href="https://forms.gle/LwzYh3yzuJEw3E3b6" target="_blank" rel="noopener noreferrer">
                   <div className="flex items-center gap-4">
                     <img src={loket} className="h-8 w-8 md:h-10 md:w-10" alt="loket.svg" />
                     <p className="text-sm font-medium md:text-base">Beli Sekarang</p>
